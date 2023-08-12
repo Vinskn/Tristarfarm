@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav {
+
+    display: flex;
+    padding: 0.5% 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {  
+    width:150px;
+}
+
+.nav li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+.tes {
+    display: inline-block;
+}
+
+.garis {
+    width: 100%;
+    height: 5px;
+    background-color:black;
+}

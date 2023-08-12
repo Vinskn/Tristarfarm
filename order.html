@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="order.css" />
+    <title>Order</title>
+  </head>
+  <body>
+    <div class="fulllayar">
+      <div class="container">
+        <div class="nav">
+          <i class="fa-solid fa-x"></i>
+          <img src="Sources/side 3 white trsp.png" class="logo" />
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="price.html">Price</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="isisemuaform">
+        <div class="order">
+          <div class="kata">
+            <img src="Sources/order here trsprt.png" alt="order" />
+          </div>
+
+          <div class="form">
+            <form action="contact.php">
+              <fieldset>
+                <h1 class="regist">Form Pemesanan</h1>
+                <div class="isiform">
+                  <p>
+                    <label>Nama : </label>
+                    <input type="text" name="Nama" placeholder="Nama Lengkap" required />
+                  </p>
+
+                  <div class="telpemail">
+                    <p>
+                      <label>Nomor Telepon : </label>
+                      <input type="number" name="No Telepon" placeholder="Telepon / Whatsapp" required />
+                    </p>
+
+                    <p>
+                      <label>Email : </label>
+                      <input type="email" name="Email" placeholder="Email" />
+                    </p>
+                  </div>
+
+                  <p>
+                    <label for="alamat">Alamat Pengiriman : </label>
+                    <input type="text" id="alamat" name="Alamat Pengiriman : " placeholder="Alamat Pengiriman" required />
+                  </p>
+
+                  <p>
+                    <label>Jenis Komoditas : </label>
+                    <label class="jeniskomoditas"><input type="radio" name="pilihan" value="Kopi" required /> Kopi</label>
+                    <label class="jeniskomoditas"><input type="radio" name="pilihan" value="Sayuran" required /> Sayuran</label>
+                  </p>
+
+                  <div class="formLanjutan" id="formKopi">
+                    <p>
+                      <label for="Jenis Kopi">Jenis Kopi : </label>
+                      <label class="jeniskopi"><input type="radio" id="Jenis Kopi" name="Jenis Kopi" value="Biasa" />Biasa</label>
+                      <label class="jeniskopi"><input type="radio" id="Jenis Kopi" name="Jenis Kopi" value="Natural" />Natural</label>
+                    </p>
+
+                    <p>
+                      <label for="Tingkat matang">Tingkat Kematangan : </label>
+                      <label class="tingkatmatang"><input type="radio" id="Tingkat matang" name="Tingkat Kematangan" value="LightRoast" />Light Roast</label>
+                      <label class="tingkatmatang"><input type="radio" id="Tingkat matang" name="Tingkat Kematangan" value="MediumRoast" />Medium Roast</label>
+                      <label class="tingkatmatang"><input type="radio" id="Tingkat matang" name="Tingkat Kematangan" value="DarkRoast" />Dark Roast</label>
+                    </p>
+
+                    <p>
+                      <label for="jumlah">Jumlah (gram) :</label>
+                      <input type="number" id="jumlah" name="Jumlah (gram)" placeholder="Masukan dengan angka" />
+                    </p>
+                  </div>
+
+                  <div class="formLanjutan" id="formSayuran">
+                    <!-- Form lanjutan untuk pilihan Sayuran -->
+                    <p>
+                      <label for="sayuranType">Jenis Sayuran:</label>
+                      <input type="text" id="sayuranType" name="sayuranType" placeholder="Lihat pada bagian Price" />
+                    </p>
+
+                    <p>
+                      <label for="jumlah">Jumlah (Kg) : </label>
+                      <input type="number" id="jumlah" name="Jumlah (Kg)" placeholder="Masukan dengan angka" />
+                    </p>
+
+                    <p>
+                      <label for="pengiriman">Pengiriman : </label>
+                      <label><input type="radio" id="pengiriman" name="Pengiriman" value="Kirim" />Parcel</label>
+                      <label><input type="radio" id="pengiriman" name="Pengiriman" value="Ambil" />Ambil Sendiri</label>
+                      <small class="ketlanjut">Untuk pembelian diatas 10kg disarankan untuk mengambil sendiri agar lebih murah</small>
+                      <small class="ketlanjut">Untuk pilihan ambil sendiri alamat akan diberikan pada nomor telepon yang tertera</small>
+                    </p>
+                  </div>
+
+                  <p>
+                    <input type="submit" class="submit" name="submit" value="Kirim" />
+                  </p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="orderscript.js"></script>
+    <script src="https://kit.fontawesome.com/ba384ee5a5.js" crossorigin="anonymous"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>

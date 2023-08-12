@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-color: #a9907e;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 760px) {
+  .container {
+    height: 1300px;
+  }
+}
+/* --------Navigasi---------- */
+.nav {
+  display: flex;
+  padding: 0 2%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(56, 55, 55, 0.5);
+}
+
+.fa-x {
+  position: absolute;
+  padding: 20px 20px 0 0;
+  right: 0;
+  font-size: 20px;
+  visibility: hidden;
+}
+.fa-bars {
+  color: white;
+  position: absolute;
+  padding: 20px 20px 0 0;
+  right: 0;
+  font-size: 25px;
+  visibility: hidden;
+}
+
+.logo {
+  width: 150px;
+}
+.fa {
+  color: white;
+}
+
+.nav li {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.nav li:hover {
+  background-color: black;
+  padding: 20px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+/*---------------------Navigasi Handpone-----------------*/
+@media (max-width: 700px) {
+  /*navigasi*/
+  .nav {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(192, 137, 17);
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: -9999;
+  }
+
+  .fa-x {
+    visibility: visible;
+  }
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .nav img {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .nav li {
+    display: block;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .nav li:hover {
+    background-color: #4fb911;
+    padding: 2px;
+  }
+}
+
+/* --------Akhir Nav ------- */
+
+/* ------------Tulisan atas------------ */
+.judul {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+/* ------------Kartu harga------------- */
+.bungkuslist {
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bungkuslist img {
+  width: 150px;
+  border-radius: 100%;
+  margin: 5px 0 0 20px;
+}
+
+/* Kartu Kopi */
+.part {
+  background-color: #f3deba;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+.part h2 {
+  background-color: #abc4aa;
+  border-radius: 20px;
+  margin: 0 5px 0 5px;
+}
+.part a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Kartu Sayur */
+.spart {
+  background-color: #abc4aa;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+.spart h2 {
+  background-color: #f3deba;
+  border-radius: 20px;
+  margin: 0 5px 0 5px;
+  padding: 5px;
+}
+.spart a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
