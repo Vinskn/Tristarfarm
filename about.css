@@ -145,28 +145,25 @@
 /* -------------profil---------------- */
 .foto {
   grid-area: profil;
-  padding-top: 35px;
+  padding-top: 115px;
   text-align: center;
-  margin: 0 50px 0 0px;
+  margin: 0 50px 0 50px;
   position: relative;
 }
 .foto img {
-  width: 70%;
+  width: 200px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px rgba(40, 42, 58, 0.5);
 }
 
-.fotokecil {
-  color: white;
-  background-color: #735f32;
-  width: 120px;
-  height: 150px;
-  border-radius: 20px;
-  position: absolute;
-  top: 220px;
-  left: 10px;
-}
-.fotokecil h2 {
-  justify-content: center;
-  font-size: 35px;
+@media (max-width: 700px) {
+  .info h1 {
+    font-size: 40px;
+  }
+  .info p {
+    font-size: 15px;
+  }
+  .foto img {
+    width: 170px;
+  }
 }
